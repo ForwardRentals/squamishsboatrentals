@@ -53,7 +53,7 @@
     "priceCurrency": "CAD",
     "description": "18-foot self-drive RIB rental with 50 HP engine. Contact for current rates and availability, or book online.",
     "availability": "https://schema.org/InStock",
-    "url": "https://squamishwatertaxi.com/boat-rentals.html"
+    "url": "https://rentedlocal.com/gear/18ft-rhib-boat-50hp-squamish-bc--6a6f5101b29a42024723c92d"
   }
 }
 </script>
@@ -282,23 +282,28 @@
   /* Photo gallery */
   .gallery {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 190px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
     gap: 0.85rem;
   }
   .gallery a { border-radius: 8px; overflow: hidden; position: relative; display: block; }
   .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
   .gallery a:hover img { transform: scale(1.06); }
-  .g1 { grid-column: span 3; grid-row: span 2; }
-  .g2 { grid-column: span 3; grid-row: span 2; }
+  .gallery figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 1.5rem 1.1rem 0.9rem;
+    background: linear-gradient(180deg, transparent, rgba(10,10,9,0.75));
+    color: #fff; font-size: 0.85rem; font-weight: 500;
+    pointer-events: none;
+  }
+  .g1 { grid-column: span 2; grid-row: span 2; }
+  .g2 { grid-column: span 2; grid-row: span 2; }
   .g3 { grid-column: span 2; }
   .g4 { grid-column: span 2; }
-  .g5 { grid-column: span 2; }
-  .g6 { grid-column: span 6; grid-row: span 2; }
   @media (max-width: 900px) {
-    .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
-    .g1, .g2, .g6 { grid-column: span 2; grid-row: span 2; }
-    .g3, .g4, .g5 { grid-column: span 1; grid-row: span 1; }
+    .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+    .g1, .g2 { grid-column: span 2; grid-row: span 2; }
+    .g3, .g4 { grid-column: span 2; grid-row: span 1; }
   }
 
   .band {
@@ -323,7 +328,7 @@
 
   .cta-final {
     text-align: center; padding: 6rem 0;
-    background: linear-gradient(180deg, rgba(10,10,9,0.55), rgba(10,10,9,0.72)), url('assets/gallery-5.jpg');
+    background: linear-gradient(180deg, rgba(10,10,9,0.55), rgba(10,10,9,0.72)), url('assets/gallery-sunset.jpg');
     background-size: cover; background-position: center;
     color: #fff;
   }
@@ -363,7 +368,7 @@
       <a href="#how">How It Works</a>
       <a href="#where">Where To Go</a>
       <a href="#faq">FAQ</a>
-      <a class="nav-cta" href="https://squamishwatertaxi.com/boat-rentals.html" target="_blank" rel="noopener">Book Now</a>
+      <a class="nav-cta" href="https://rentedlocal.com/gear/18ft-rhib-boat-50hp-squamish-bc--6a6f5101b29a42024723c92d" target="_blank" rel="noopener">Book Now</a>
     </div>
   </div>
 </nav>
@@ -374,7 +379,7 @@
     <h1>Rent the boat.<br>Drive it yourself.</h1>
     <p class="lede">No guide standing over your shoulder, no tour group setting the pace. An 18-foot RIB with a 50 HP outboard, docked in Squamish, handed to you for the block of time you book — you pick the route, you hold the throttle, you decide when to turn back toward Howe Sound.</p>
     <div class="btn-row">
-      <a class="btn btn-primary" href="https://squamishwatertaxi.com/boat-rentals.html" target="_blank" rel="noopener">Book The RIB</a>
+      <a class="btn btn-primary" href="https://rentedlocal.com/gear/18ft-rhib-boat-50hp-squamish-bc--6a6f5101b29a42024723c92d" target="_blank" rel="noopener">Book The RIB</a>
       <a class="btn btn-ghost" href="#boat">See The Boat</a>
     </div>
     <p class="phone-line">Questions before you book? Call or text <a href="tel:+16048498898">(604) 849-8898</a>.</p>
@@ -399,7 +404,7 @@
           <li><span class="k">Safety gear</span><span class="v">Life jackets &amp; nav equipment included</span></li>
           <li><span class="k">Base</span><span class="v">Squamish, Howe Sound</span></li>
         </ul>
-        <a class="btn btn-primary" href="https://squamishwatertaxi.com/boat-rentals.html" target="_blank" rel="noopener">Check Availability</a>
+        <a class="btn btn-primary" href="https://rentedlocal.com/gear/18ft-rhib-boat-50hp-squamish-bc--6a6f5101b29a42024723c92d" target="_blank" rel="noopener">Check Availability</a>
       </div>
     </div>
   </div>
@@ -446,12 +451,10 @@
       <h2>Howe Sound, from the helm.</h2>
     </div>
     <div class="gallery">
-      <a class="g1" href="assets/gallery-1.jpg" target="_blank" rel="noopener"><img src="assets/gallery-1.jpg" alt="RIB boat rental underway on Howe Sound" loading="lazy"></a>
-      <a class="g2" href="assets/gallery-2.jpg" target="_blank" rel="noopener"><img src="assets/gallery-2.jpg" alt="Squamish boat rental on the water" loading="lazy"></a>
-      <a class="g3" href="assets/gallery-3.jpg" target="_blank" rel="noopener"><img src="assets/gallery-3.jpg" alt="Boat rental docked in Squamish, BC" loading="lazy"></a>
-      <a class="g4" href="assets/gallery-4.jpg" target="_blank" rel="noopener"><img src="assets/gallery-4.jpg" alt="Self-drive boat rental Squamish" loading="lazy"></a>
-      <a class="g5" href="assets/gallery-5.jpg" target="_blank" rel="noopener"><img src="assets/gallery-5.jpg" alt="Howe Sound sunset from a boat rental" loading="lazy"></a>
-      <a class="g6" href="assets/gallery-6.jpg" target="_blank" rel="noopener"><img src="assets/gallery-6.jpg" alt="Scenic view of Howe Sound from a self-drive boat rental" loading="lazy"></a>
+      <a class="g1" href="assets/gallery-action.jpg" target="_blank" rel="noopener"><img src="assets/gallery-action.jpg" alt="The 18-ft RIB rental at speed on Howe Sound" loading="lazy"><figcaption>At speed on Howe Sound</figcaption></a>
+      <a class="g2" href="assets/gallery-moored.jpg" target="_blank" rel="noopener"><img src="assets/gallery-moored.jpg" alt="The RIB rental anchored just off the Squamish shoreline" loading="lazy"><figcaption>Anchored off the shoreline</figcaption></a>
+      <a class="g3" href="assets/gallery-waterfront.jpg" target="_blank" rel="noopener"><img src="assets/gallery-waterfront.jpg" alt="Squamish waterfront viewed from the water at dusk" loading="lazy"><figcaption>The Squamish waterfront</figcaption></a>
+      <a class="g4" href="assets/gallery-sunset.jpg" target="_blank" rel="noopener"><img src="assets/gallery-sunset.jpg" alt="Howe Sound at sunset" loading="lazy"><figcaption>Howe Sound, evening light</figcaption></a>
     </div>
   </div>
 </section>
@@ -503,11 +506,11 @@
       </div>
       <div class="faq">
         <h3>How much does it cost?</h3>
-        <p>Rates vary by season and rental length &mdash; check live availability when you <a class="underline-link" href="https://squamishwatertaxi.com/boat-rentals.html" target="_blank" rel="noopener">book online</a>, or call <a class="underline-link" href="tel:+16048498898">(604) 849-8898</a> for a quote.</p>
+        <p>Rates vary by season and rental length &mdash; check live availability when you <a class="underline-link" href="https://rentedlocal.com/gear/18ft-rhib-boat-50hp-squamish-bc--6a6f5101b29a42024723c92d" target="_blank" rel="noopener">book online</a>, or call <a class="underline-link" href="tel:+16048498898">(604) 849-8898</a> for a quote.</p>
       </div>
       <div class="faq">
         <h3>How do I book?</h3>
-        <p>Straight online at <a class="underline-link" href="https://squamishwatertaxi.com/boat-rentals.html" target="_blank" rel="noopener">squamishwatertaxi.com/boat-rentals.html</a>, or call or text <a class="underline-link" href="tel:+16048498898">(604) 849-8898</a> and a local answers.</p>
+        <p>Straight online at <a class="underline-link" href="https://rentedlocal.com/gear/18ft-rhib-boat-50hp-squamish-bc--6a6f5101b29a42024723c92d" target="_blank" rel="noopener">squamishwatertaxi.com/boat-rentals.html</a>, or call or text <a class="underline-link" href="tel:+16048498898">(604) 849-8898</a> and a local answers.</p>
       </div>
     </div>
   </div>
@@ -519,7 +522,7 @@
     <h2>Go be the captain for a day.</h2>
     <p>Book online in a couple of minutes, or call ahead with questions about routes, weather, or your PCOC.</p>
     <div class="btn-row">
-      <a class="btn btn-primary" href="https://squamishwatertaxi.com/boat-rentals.html" target="_blank" rel="noopener">Book The RIB</a>
+      <a class="btn btn-primary" href="https://rentedlocal.com/gear/18ft-rhib-boat-50hp-squamish-bc--6a6f5101b29a42024723c92d" target="_blank" rel="noopener">Book The RIB</a>
       <a class="btn btn-ghost" href="tel:+16048498898">Call (604) 849-8898</a>
     </div>
   </div>
@@ -535,7 +538,7 @@
       <div>
         <h4>Book</h4>
         <ul>
-          <li><a href="https://squamishwatertaxi.com/boat-rentals.html" target="_blank" rel="noopener">Self-drive RIB rental</a></li>
+          <li><a href="https://rentedlocal.com/gear/18ft-rhib-boat-50hp-squamish-bc--6a6f5101b29a42024723c92d" target="_blank" rel="noopener">Self-drive RIB rental</a></li>
           <li><a href="https://squamishwatertaxi.com/tours.html" target="_blank" rel="noopener">Prefer a skippered tour?</a></li>
           <li><a href="https://squamish-boat-rentals.com" target="_blank" rel="noopener">Compare every boat option</a></li>
         </ul>
